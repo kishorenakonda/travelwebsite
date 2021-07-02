@@ -1,0 +1,34 @@
+.page-body {
+  margin: auto;
+  width: 80%;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.navbar {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.left-width {
+  width: 12.5%;
+}
+
+.right-width {
+  width: 12.5%;
+}
+
+.welcome-template {
+  overflow: hidden;
+  margin-top: 20px;
+}

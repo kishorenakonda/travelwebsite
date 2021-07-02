@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+}
+
+/* Font */
+
+.text-danger {
+  color: #ff6452;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Padding */
+
+.p-t-5 {
+  padding-top: 5px
+}
+
+.row {
+  display: block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

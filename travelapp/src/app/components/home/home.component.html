@@ -1,0 +1,25 @@
+<div class="page-body">
+  <div class="topnav">
+    <div class="navbar">
+      <div class="menu" (click)="onScrollTo(weather)"> weather </div>
+      <div class="menu" (click)="onScrollTo(destinations)"> destinations </div>
+      <div class="menu" (click)="onScrollTo(quote)"> get a quote </div>
+    </div>
+  </div>
+
+  <div #welcomeTemplate class="welcome-template">
+    <app-welcome-page></app-welcome-page>
+  </div>
+
+  <div #weather>
+    <app-weather></app-weather>
+  </div>
+
+  <div #destinations>
+    <app-destinations></app-destinations>
+  </div>
+
+  <div #quote>
+    <app-quote></app-quote>
+  </div>
+</div>
