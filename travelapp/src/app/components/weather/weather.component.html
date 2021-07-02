@@ -1,3 +1,25 @@
-<p>
-  weather works!
-</p>
+<div class="row widget-background">
+  <div class="widget-heading">
+    the weather channel
+  </div>
+  <div class="widget-body">
+    <div class="grid-container" *ngIf="flags.displaySuccessContent">
+      <div class="grid-box" *ngFor="let weatherObj of datasource.weatherList"
+        [style.background-color]="weatherObj.bgColor">
+        <div class=""> {{weatherObj.city}} </div>
+        <div class="p-t-10">
+          <img src="./assets/images/icon-party-sunny.svg" alt="sunny-icon" height="30" />
+        </div>
+        <div class="">
+          <span class="fs-50"> {{weatherObj.temp_Celsius}}° </span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="flags.displayErrorMessage">
+      <div class="error-message">
+        {{datasource.errorMessage}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
-import { AppRoutes } from './app.routes';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -25,7 +24,7 @@ import { WelcomePageComponent } from './components/welcome-page/welcome-page.com
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(AppRoutes)
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

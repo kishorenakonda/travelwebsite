@@ -26,6 +26,14 @@ body {
   padding-top: 5px
 }
 
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
 .row {
   display: block;
 }
@@ -36,4 +44,9 @@ body {
 
 .float-right {
   float: right;
+}
+
+.body-space {
+  margin: auto;
+  width: 90%
 }

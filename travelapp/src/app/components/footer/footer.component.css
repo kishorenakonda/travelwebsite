@@ -1,0 +1,51 @@
+.footer-background {
+  background-image: linear-gradient(to right, #000, #133357);
+  min-height: 150px;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-block {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.footer-block {
+  padding: 20px;
+  display: inline-block;
+  width: 33%;
+}
+
+.footer-body {
+  margin: auto;
+  width: 90%;
+  display: flex;
+}
+
+.areas {
+  width: 60%;
+}
+
+.disclaimer {
+  width: 40%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-body {
+    display: block;
+  }
+  .disclaimer {
+    width: 100%;
+  }
+  .footer-block {
+    display: block;
+    width: 100%;
+  }
+}
