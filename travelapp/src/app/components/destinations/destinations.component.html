@@ -1,3 +1,21 @@
-<p>
-  destinations works!
-</p>
+<div class="row widget-background">
+  <div class="widget-heading">
+    Featured Destinations
+  </div>
+  <div class="widget-body">
+    <div class="image-container" *ngIf="flags.displaySuccessContent">
+      <div class="image-box" *ngFor="let destinationObj of datasource.destinationList">
+        <div class="p-t-10">
+          <img [src]="destinationObj.imageUrl" alt="city-image" class="image-css" />
+        </div>
+        <div class="city-name"> {{destinationObj.city}} </div>
+      </div>
+    </div>
+
+    <div *ngIf="flags.displayErrorMessage">
+      <div class="error-message">
+        {{datasource.errorMessage}}
+      </div>
+    </div>
+  </div>
+</div>

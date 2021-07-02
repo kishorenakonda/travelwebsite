@@ -18,22 +18,21 @@
 
 .footer-block {
   padding: 20px;
-  display: inline-block;
-  width: 33%;
 }
 
 .footer-body {
   margin: auto;
   width: 90%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
-.areas {
-  width: 60%;
+.areas-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .disclaimer {
-  width: 40%;
   padding: 20px;
 }
 
@@ -44,8 +43,7 @@
   .disclaimer {
     width: 100%;
   }
-  .footer-block {
-    display: block;
-    width: 100%;
+  .areas-grid {
+    grid-template-columns: auto;
   }
 }

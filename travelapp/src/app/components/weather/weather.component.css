@@ -1,14 +1,15 @@
+.widget-background {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+}
+
 .widget-heading {
   background-color: #123052;
   color: #fff;
   text-transform: uppercase;
   padding: 20px;
-}
-
-.widget-background {
-  margin: auto;
-  width: 80%;
-  padding-top: 50px;
 }
 
 .grid-container {

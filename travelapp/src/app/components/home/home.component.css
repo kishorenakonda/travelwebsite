@@ -24,9 +24,49 @@
   width: 80%;
 }
 
+.promo-image {
+  height: auto;
+  width: 100%;
+}
+
+.trip-header {
+  font-size: 32px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.trip-details {
+  color: #fff;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.align-bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 75px;
+}
+
 @media only screen and (max-width: 768px) {
   .topnav {
     width: 90%;
     font-size: 12px;
+  }
+  .align-bottom-left {
+    bottom: 25px;
+    left: 30px;
+  }
+  .trip-header {
+    font-size: 20px;
+  }
+  .trip-details {
+    padding-top: 0px;
+    font-size: 15px;
   }
 }

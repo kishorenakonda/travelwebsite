@@ -1,0 +1,35 @@
+.widget-background {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.widget-heading {
+  color: #123052;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.widget-body {
+  padding-top: 15px;
+}
+
+.image-css {
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.image-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-box {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.city-name {
+  color: #a7a7a7;
+}
