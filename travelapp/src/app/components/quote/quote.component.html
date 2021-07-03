@@ -1,3 +1,70 @@
-<p>
-  quote works!
-</p>
+<div class="quote-background">
+  <div class="quote-header"> Travelling as a group ? Get a Quote </div>
+
+  <div class="quote-body" *ngIf="flags.displayForm">
+    <form [formGroup]="quoteForm" (ngSubmit)="onSubmitForm(quoteForm)" class="" novalidate>
+      <!-- Name -->
+      <div class="">
+        <label> Your Name </label>
+        <div class="">
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+
+        <!-- Error Cases -->
+        <div class="text-danger" *ngIf="flags.formSubmit && quoteForm.controls.name.errors">
+          <div *ngIf="quoteForm.controls.name.errors.required">
+            Name is required
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact No -->
+      <div class="p-t-10">
+        <label> Contact No </label>
+        <div class="">
+          <input type="text" class="form-control" formControlName="mobile">
+        </div>
+
+        <!-- Error Cases -->
+        <div class="text-danger" *ngIf="flags.formSubmit && quoteForm.controls.mobile.errors">
+          <div *ngIf="quoteForm.controls.mobile.errors.required">
+            Contact No is required
+          </div>
+          <div *ngIf="quoteForm.controls.mobile.errors.pattern">
+            Invalid Contact No
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="p-t-10">
+        <label> Email </label>
+        <div class="">
+          <input type="text" class="form-control" formControlName="email">
+        </div>
+
+        <!-- Error Cases -->
+        <div class="text-danger" *ngIf="flags.formSubmit && quoteForm.controls.email.errors">
+          <div *ngIf="quoteForm.controls.email.errors.required">
+            Email is required
+          </div>
+          <div *ngIf="quoteForm.controls.email.errors.email">
+            Invalid Email
+          </div>
+        </div>
+      </div>
+
+      <div class="p-t-10" *ngIf="flags.isValidForm">
+        <div class="success-message">
+          We hear you! We will get back to you for planning your vacation.
+        </div>
+      </div>
+
+      <div class="btn">
+        <button class="dark-btn">
+          submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -20,16 +20,6 @@
   padding: 75px 10px 0px 10px;
 }
 
-.dark-btn {
-  padding: 10px 30px 10px 30px;
-  text-transform: uppercase;
-  font-family: 'Roboto Slab';
-  background-image: linear-gradient(to right, #000, #133357);
-  color: #fff;
-  border-radius: 4px;
-  border: 0.5px solid #ccc;
-}
-
 @media only screen and (max-width: 768px) {
   .welcome-image {
     max-width: 100%;

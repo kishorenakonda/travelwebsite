@@ -1,0 +1,53 @@
+.quote-background {
+  margin: auto;
+  width: 35%;
+  margin-top: 30px;
+}
+
+.quote-header {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #133357;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote-background {
+    width: 90%;
+  }
+  .quote-header {
+    font-size: 18px;
+  }
+}
+
+label {
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #a7a7a7;
+  background-color: #d0f8cc;
+  font-size: 13px;
+  padding: 10px;
+  border-top: 1px solid;
+  border-radius: 2px;
+}
