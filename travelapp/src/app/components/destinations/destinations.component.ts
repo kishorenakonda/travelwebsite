@@ -25,7 +25,7 @@ export class DestinationsComponent implements OnInit {
 
   ngOnInit() {
     this.getFlagsStatus();
-    this.getDefaultDetails();
+    this.fetchDestinationList();
   }
 
   getFlagsStatus() {
@@ -33,30 +33,27 @@ export class DestinationsComponent implements OnInit {
     this.flags.displaySuccessContent = false;
   }
 
-  getDefaultDetails() {
-    this.fetchDestinationList();
-  }
-
   fetchDestinationList() {
-    const url = 'https://run.mocky.io/v3/3e6901dd-9a60-4771-a8cb-9c62177a654c';
     this.httpService.getHttp(
-      url,
+      'https://run.mocky.io/v3/3e6901dd-9a60-4771-a8cb-9c62177a654c',
       (response) => {
         if (response && response.result && response.result.length > 0) {
           this.datasource.destinationList = response.result;
-
           this.flags.displaySuccessContent = true;
         } else {
-          this.datasource.destinationList = [];
-          this.flags.displayErrorMessage = true;
-          this.datasource.errorMessage = 'Error in Fetching Destinations';
+          this.onErrorResponse();
         }
       },
       (error) => {
         console.error('<-- Error in Fetching Destination List -->', error);
-        this.flags.displayErrorMessage = true;
-        this.datasource.errorMessage = 'Error in Fetching Destinations';
+        this.onErrorResponse();
       }
     );
+  }
+
+  onErrorResponse() {
+    this.datasource.destinationList = [];
+    this.flags.displayErrorMessage = true;
+    this.datasource.errorMessage = 'Error in Fetching Destinations';
   }
 }

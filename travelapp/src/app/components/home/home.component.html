@@ -1,4 +1,5 @@
 <div class="page-body">
+  <!-- navigation bar -->
   <section class="topnav">
     <div class="navbar">
       <div class="menu" (click)="onScrollTo(weather)"> weather </div>
@@ -7,18 +8,22 @@
     </div>
   </section>
 
+  <!-- Landing template -->
   <section #welcomeTemplate class="welcome-template">
     <app-welcome-page></app-welcome-page>
   </section>
 
+  <!-- Weather Channels -->
   <section #weather>
     <app-weather></app-weather>
   </section>
 
+  <!-- Destinations -->
   <section #destinations>
     <app-destinations></app-destinations>
   </section>
 
+  <!-- Promo -->
   <section class="p-t-20" #planatripTemplate>
     <div class="image-wrapper">
       <img src="./assets/images/promo-image.png" alt="promo-image" class="promo-image" />
@@ -30,6 +35,7 @@
     </div>
   </section>
 
+  <!-- Quote -->
   <section #quote>
     <app-quote></app-quote>
   </section>

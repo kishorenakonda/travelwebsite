@@ -33,7 +33,7 @@ export class WeatherComponent implements OnInit {
 
   ngOnInit() {
     this.getFlagsStatus();
-    this.getDefaultDetails();
+    this.getWeatherList();
   }
 
   getFlagsStatus() {
@@ -41,15 +41,9 @@ export class WeatherComponent implements OnInit {
     this.flags.displaySuccessContent = false;
   }
 
-  getDefaultDetails() {
-
-    this.getWeatherList();
-  }
-
   getWeatherList() {
-    const url = 'https://run.mocky.io/v3/e3ae9d2e-78f5-403d-b6cd-fa7f8c7e1576';
     this.httpService.getHttp(
-      url,
+      'https://run.mocky.io/v3/e3ae9d2e-78f5-403d-b6cd-fa7f8c7e1576',
       (response) => {
         if (response && response.result && response.result.length > 0) {
           this.datasource.weatherList = response.result;
@@ -60,16 +54,19 @@ export class WeatherComponent implements OnInit {
 
           this.flags.displaySuccessContent = true;
         } else {
-          this.datasource.weatherList = [];
-          this.flags.displayErrorMessage = true;
-          this.datasource.errorMessage = 'Error in Fetching Weather Channel Details';
+          this.onErrorResponse();
         }
       },
       (error) => {
         console.error('<-- Error in Fetching Weather List -->', error);
-        this.flags.displayErrorMessage = true;
-        this.datasource.errorMessage = 'Error in Fetching Weather Channel Details';
+        this.onErrorResponse();
       }
     );
+  }
+
+  onErrorResponse() {
+    this.datasource.weatherList = [];
+    this.flags.displayErrorMessage = true;
+    this.datasource.errorMessage = 'Error in Fetching Weather Channel Details';
   }
 }

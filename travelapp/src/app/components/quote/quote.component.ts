@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-
 interface FlagsObj {
   displayForm: boolean;
   formSubmit: boolean;
@@ -41,7 +40,6 @@ export class QuoteComponent implements OnInit {
   }
 
   onSubmitForm(quoteForm) {
-    console.log("quoteForm", quoteForm);
     this.flags.isValidForm = false;
     this.flags.formSubmit = true;
     if (quoteForm.valid) {
