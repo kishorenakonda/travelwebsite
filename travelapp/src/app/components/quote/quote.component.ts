@@ -46,6 +46,8 @@ export class QuoteComponent implements OnInit {
     this.flags.formSubmit = true;
     if (quoteForm.valid) {
       this.flags.isValidForm = true;
+      this.flags.formSubmit = false;
+      this.quoteForm.reset();
     }
   }
 }
