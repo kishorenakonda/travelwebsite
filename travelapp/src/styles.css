@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
-  /* font-family: 'Roboto', serif; */
+  font-family: 'Roboto';
   margin: 0px;
 }
 
@@ -56,7 +55,6 @@ body {
 .dark-btn {
   padding: 10px 50px 10px 50px;
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-weight: bold;
   background-image: linear-gradient(to right, #000, #133357);
   color: #fff;

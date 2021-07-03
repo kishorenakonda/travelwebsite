@@ -1,7 +1,7 @@
 <div class="header-background">
   <div class="body-space">
-    <div class=""> Book now to get exciting travel deals. Upto 40% off on credit card payments </div>
-    <div class="p-t-5" *ngIf="!flags.displayOfferExpired"> Offers ends in {{datasource?.timer}} </div>
+    <div class="header-firstline"> Book now to get exciting travel deals. Upto 40% off on credit card payments </div>
+    <div class="p-t-5 header-secondline" *ngIf="!flags.displayOfferExpired"> Offers ends in {{datasource?.timer}} </div>
     <div class="p-t-5 text-danger" *ngIf="flags.displayOfferExpired"> Offer Expired </div>
   </div>
 </div>

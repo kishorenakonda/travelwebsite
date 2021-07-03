@@ -30,7 +30,7 @@
 }
 
 .trip-header {
-  font-size: 32px;
+  font-size: 50px;
   padding-bottom: 10px;
   font-weight: bold;
   color: #fff;
@@ -49,8 +49,8 @@
 
 .align-bottom-left {
   position: absolute;
-  bottom: 50px;
-  left: 75px;
+  bottom: 100px;
+  left: 100px;
 }
 
 @media only screen and (max-width: 768px) {

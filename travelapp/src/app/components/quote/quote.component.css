@@ -10,6 +10,7 @@
   color: #133357;
   font-weight: bold;
   font-size: 25px;
+  font-family: 'Roboto Slab';
 }
 
 .btn {
@@ -30,17 +31,16 @@ input[type=text], select {
 
 @media only screen and (max-width: 768px) {
   .quote-background {
-    width: 90%;
+    width: 80%;
   }
   .quote-header {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 label {
-  color: #ccc;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
+  color: grey;
 }
 
 .success-message {

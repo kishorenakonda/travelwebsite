@@ -4,12 +4,15 @@
 }
 
 .header {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .details {
   padding-top: 20px;
+  color: grey;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .btn {
@@ -27,5 +30,8 @@
   }
   .right-panel {
     text-align: center;
+  }
+  .header {
+    font-size: 35px;
   }
 }

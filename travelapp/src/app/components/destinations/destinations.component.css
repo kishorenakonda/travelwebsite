@@ -1,13 +1,14 @@
 .widget-background {
   margin: auto;
   width: 80%;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .widget-heading {
   color: #123052;
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Roboto Slab';
 }
 
 .widget-body {
@@ -15,9 +16,9 @@
 }
 
 .image-css {
-  height: 150px;
-  width: 150px;
-  border-radius: 8px;
+  height: 185px;
+  width: 185px;
+  border-radius: 8px 8px 8px 0px;
 }
 
 .image-container {
